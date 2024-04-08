@@ -1,0 +1,19 @@
+body{
+    background-color: coral;
+}
+
+#parrafo{ /* esto es un ID */
+    color: white;
+}
+
+.letraGrande{  /* esto es una clase */
+    font-size: 10px;
+}
+
+.margenIzq{ /* esto es una clase */
+    margin-left:10px;
+}
+
+.formatoImagenStandar{
+    border: 10xp solid black;
+}
