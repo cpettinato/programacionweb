@@ -13,7 +13,3 @@ body{
 .margenIzq{ /* esto es una clase */
     margin-left:10px;
 }
-
-.formatoImagenStandar{
-    border: 10xp solid black;
-}
