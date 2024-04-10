@@ -19,9 +19,9 @@
                 </button>
                 <!-- Elementos de la navbar -->
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#hero">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="#portada">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#about">Acerca de</a>
@@ -30,15 +30,21 @@
                             <a class="nav-link" href="#products">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#testimonials">Testimonios</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="#contact">Contacto</a>
+                        </li>
+                    </ul>
+                    <!-- Este es el nuevo elemento para el carrito con la clase ms-auto -->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cart">
+                                <i class="fa fa-shopping-cart"></i> Carrito
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+        
     </header>
     <!-- Finaliza el header -->
     
@@ -66,26 +72,79 @@
     </section>
     
     <!-- Sección Productos -->
-    <section id="products" class="container mt-4">
-        <div class="row">
-            <div class="col-lg-12">
-                <h2>Nuestros Productos</h2>
-                <!-- Añade aquí una galería de imágenes de tus productos o un catálogo -->
-                <!--Quiero poner 6 productos para empezar, imagen y precio con opcion de agregar al carrito-->
+<section id="products" class="container mt-5">
+    <div class="row g-4">
+        <h2>Nuestros Productos</h2>
+        <!-- Producto 1 -->
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="Imagenes\rosa.jpg" class="product-image" alt="Mix Mini Alfajorcitos">
+                <div class="product-info">
+                    <h5 class="product-title">MIX MINI ALFAJORCITOS</h5>
+                    <!-- Más información o botones aquí -->
+                </div>
             </div>
         </div>
-    </section>
-    
-    <!-- Sección Testimonios -->
-    <section id="testimonials" class="container mt-4">
-        <div class="row">
-            <div class="col-lg-12">
-                <h2>Testimonios</h2>
-                <p>"Los mejores pasteles de chocolate que he probado." - Juan</p>
-                <!-- Aquí puedes añadir más testimonios o reseñas de tus clientes -->
+        
+        <!-- Producto 2 -->
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="Imagenes\rosa.jpg" class="product-image" alt="Macarons">
+                <div class="product-info">
+                    <h5 class="product-title">MACARONS</h5>
+                    <!-- Más información o botones aquí -->
+                </div>
             </div>
         </div>
-    </section>
+        
+        <!-- Producto 3 -->
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="Imagenes\rosa.jpg" class="product-image" alt="Scon de Queso">
+                <div class="product-info">
+                    <h5 class="product-title">SCON DE QUESO</h5>
+                    <!-- Más información o botones aquí -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Segunda fila de productos -->
+     <div class="row g-4">
+        <!-- Producto 4 -->
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="Imagenes\rosa.jpg" class="product-image" alt="Producto 4">
+                <div class="product-info">
+                    <h5 class="product-title">NOMBRE DEL PRODUCTO 4</h5>
+                    <!-- Más información o botones aquí -->
+                </div>
+            </div>
+        </div>
+        <!-- Producto 5 -->
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="Imagenes\rosa.jpg" class="product-image" alt="Producto 5">
+                <div class="product-info">
+                    <h5 class="product-title">NOMBRE DEL PRODUCTO 5</h5>
+                    <!-- Más información o botones aquí -->
+                </div>
+            </div>
+        </div>
+        <!-- Producto 6 -->
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="Imagenes\rosa.jpg" class="product-image" alt="Producto 6">
+                <div class="product-info">
+                    <h5 class="product-title">NOMBRE DEL PRODUCTO 6</h5>
+                    <!-- Más información o botones aquí -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
     
     <!-- Sección Contacto -->
     <section id="contact" class="container mt-4 mb-4">
