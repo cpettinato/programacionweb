@@ -1,15 +1,68 @@
-body{
-    background-color: pink;
+/* Resetear algunos estilos por defecto para tener un lienzo limpio */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#parrafo{ /* esto es un ID */
-    color: white;
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #F3E9F1; /* Fondo general de color lavanda pastel */
+    color: #6D6875; /* Color de texto en un tono más oscuro para contraste */
 }
 
-.letraGrande{  /* esto es una clase */
-    font-size: 10px;
+header {
+    background-color: #FAD2E1; /* Color rosado pastel para el encabezado */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.margenIzq{ /* esto es una clase */
-    margin-left:10px;
+.navbar {
+    padding: 1rem;
 }
+
+.navbar-brand {
+    color: #E5989B; /* Color rosado medio para el logo/nombre de la tienda */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #B5838D; /* Color rosado suave para los enlaces */
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: #6D6875; /* Color morado-grisáceo para hover y focus para accesibilidad */
+}
+
+/* Sección de Hero */
+#hero {
+    background-color: #FFC6FF; /* Un color rosa claro brillante */
+    padding: 2rem 0;
+}
+
+/* Títulos de secciones con colores pastel */
+h1, h2, h3, h4, h5, h6 {
+    color: #A44A3F; /* Color rojo tierra pastel para títulos, para buen contraste */
+}
+
+/* Colores de las secciones */
+#about,
+#testimonials,
+#contact {
+    background-color: #BEE1E6; /* Color azul cielo pastel */
+    padding: 2rem 0;
+}
+
+#products {
+    background-color: #FFAFCC; /* Color rosa pastel más intenso para la sección de productos */
+    padding: 2rem 0;
+}
+
+/* Estilo para el footer */
+footer {
+    background-color: #CDB4DB; /* Color lavanda pastel para el footer */
+    color: #6D6875;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Añade estilos personalizados adicionales aquí */
