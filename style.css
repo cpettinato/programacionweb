@@ -1,13 +1,23 @@
+h1, h2, h3, h4, h5, h6, p, .navbar-brand, .nav-link, footer {
+    font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+h1, h2 {
+    font-size: 2.5rem; 
+    color: #5E2129; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
 .carousel-item {
-    max-height: 600px; /* Ajusta este valor según lo que necesites */
-    overflow: hidden; /* Esto cortará cualquier parte de la imagen que exceda la altura máxima */
+    max-height: 600px; 
+    overflow: hidden; 
 }
 
 .carousel-item img {
-    width: 100%; /* Asegura que la imagen cubra el ancho completo */
-    object-fit: contain; /* La imagen se escalará dentro del carrusel sin cortarse */
+    width: 100%; 
+    object-fit: contain;
 }
-
 .product-card {
     background-color: white;
     border: none;
@@ -22,7 +32,7 @@
 
 .product-image {
     max-width: 100%; 
-    height: auto; /* Esto asegurará que la imagen mantenga su aspecto */
+    height: auto; 
     object-fit: contain;
     margin-bottom: 15px;
 }
@@ -45,6 +55,23 @@
     margin-bottom: 15px;
 }
 
+.btn-add-to-cart {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: 'Reem Kufi Fun', sans-serif;
+    color: white;
+    background-color: #5E2129;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-add-to-cart:hover {
+    background-color: #803034;
+}
+
+
 body {
     background-color: #F3E6E9;
 }
@@ -53,7 +80,7 @@ body {
     .product-card {
         width: auto; 
         height: auto;
-        margin: 10px; /* Ajusta el margen para pantallas pequeñas */
+        margin: 10px; 
     }
 }
 
