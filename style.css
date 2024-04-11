@@ -1,1 +1,61 @@
+.carousel-item {
+    max-height: 600px; /* Ajusta este valor según lo que necesites */
+    overflow: hidden; /* Esto cortará cualquier parte de la imagen que exceda la altura máxima */
+}
+
+.carousel-item img {
+    width: 100%; /* Asegura que la imagen cubra el ancho completo */
+    object-fit: contain; /* La imagen se escalará dentro del carrusel sin cortarse */
+}
+
+.product-card {
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.product-image {
+    max-width: 100%; 
+    height: auto; /* Esto asegurará que la imagen mantenga su aspecto */
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.product-info {
+    text-align: center;
+    padding: 0 15px;
+}
+
+.product-title {
+    font-size: 1.5rem;
+    color: #5E2129;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 1.25rem;
+    color: #5E2129;
+    margin-bottom: 15px;
+}
+
+body {
+    background-color: #F3E6E9;
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        width: auto; 
+        height: auto;
+        margin: 10px; /* Ajusta el margen para pantallas pequeñas */
+    }
+}
+
+
 
