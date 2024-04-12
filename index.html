@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,7 +17,6 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container-fluid">
-                <!-- Logo y botón para versión móvil -->
                 <a class="navbar-brand" href="#">Nunca es mucho dulce de leche</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +41,6 @@
                             <a class="nav-link" href="#contact">Contacto</a>
                         </li>
                     </ul>
-                    <!-- Este es el nuevo elemento para el carrito con la clase ms-auto -->
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="#cart">
@@ -91,7 +90,6 @@
                     </button>
                 </div>
                 <h1 class="display-4">Nunca es mucho dulce de leche</h1>
-                <p class="lead">Tu lugar para encontrar todo con dulce de leche.</p>
             </div>
         </div>
     </section>
@@ -99,12 +97,23 @@
     <!-- Sección Acerca De -->
     <section id="about" class="container mt-4">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-6">
+                <img src="Imagenes\acerca2.jpg" alt="Sobre Nosotros" class="img-fluid">
+                <!-- Asegúrate de reemplazar ruta-a-tu-imagen.jpg con la ruta real de tu imagen -->
+            </div>
+            <div class="col-lg-6">
                 <h2>Acerca de</h2>
-                <p>Contamos con más de 10 años ofreciendo los mejores pasteles en la ciudad.</p>
+                <p>En "Nunca es mucho dulce de leche" celebramos la riqueza del dulce de leche como la estrella de
+                    nuestras exquisitas creaciones. Con más de una década de experiencia, nuestras tortas son una
+                    invitación a deleitarse con el sabor auténtico y la más alta calidad.</p>
+                <p>Visita nuestra tienda o haz tu pedido en línea y disfruta de la promesa de un dulce placer en cada
+                    bocado.</p>
+
             </div>
         </div>
     </section>
+
+
 
     <!-- Sección Tortas -->
     <section id="cakes" class="container mt-5">
@@ -184,83 +193,83 @@
         </div>
     </section>
 
-<!-- Sección Productos Secos -->
-<section id="products" class="container mt-5">
-    <div class="row g-4">
-        <h2 class="col-12">Otros Productos</h2>
-        <!-- Fila 1 de Productos -->
-        <!-- Producto 1 -->
-        <div class="col-md-4">
-            <div class="product-card">
-                <img src="Imagenes\ALFAJORBLANCO.jpg" class="product-image" alt="ALFAJOR DE CHOCOLATE BLANCO">
-                <div class="product-info">
-                    <h5 class="product-title">ALFAJOR BLANCO</h5>
-                    <p class="product-price">$2.500,00</p>
-                    <button type="button" class="btn-add-to-cart">Agregar al carrito</button>
+    <!-- Sección Productos Secos -->
+    <section id="products" class="container mt-5">
+        <div class="row g-4">
+            <h2 class="col-12">Otros Productos</h2>
+            <!-- Fila 1 de Productos -->
+            <!-- Producto 1 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="Imagenes\ALFAJORBLANCO.jpg" class="product-image" alt="ALFAJOR DE CHOCOLATE BLANCO">
+                    <div class="product-info">
+                        <h5 class="product-title">ALFAJOR BLANCO</h5>
+                        <p class="product-price">$2.500,00</p>
+                        <button type="button" class="btn-add-to-cart">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 2 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="Imagenes\COOKIECHIPS.jpg" class="product-image" alt="COOKIE CHIPS">
+                    <div class="product-info">
+                        <h5 class="product-title">COOKIE CON CHIPS</h5>
+                        <p class="product-price">$3.000,00</p>
+                        <button type="button" class="btn-add-to-cart">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 3  -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="Imagenes\COOKIERED.jpg" class="product-image" alt="COOKIE RED VELVET">
+                    <div class="product-info">
+                        <h5 class="product-title">COOKIE RED VELVET</h5>
+                        <p class="product-price">$3.500,00</p>
+                        <button type="button" class="btn-add-to-cart">Agregar al carrito</button>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Producto 2 -->
-        <div class="col-md-4">
-            <div class="product-card">
-                <img src="Imagenes\COOKIECHIPS.jpg" class="product-image" alt="COOKIE CHIPS">
-                <div class="product-info">
-                    <h5 class="product-title">COOKIE CON CHIPS</h5>
-                    <p class="product-price">$3.000,00</p>
-                    <button type="button" class="btn-add-to-cart">Agregar al carrito</button>
-                </div>
-            </div>
-        </div>
-        <!-- Producto 3  -->
-        <div class="col-md-4">
-            <div class="product-card">
-                <img src="Imagenes\COOKIERED.jpg" class="product-image" alt="COOKIE RED VELVET">
-                <div class="product-info">
-                    <h5 class="product-title">COOKIE RED VELVET</h5>
-                    <p class="product-price">$3.500,00</p>
-                    <button type="button" class="btn-add-to-cart">Agregar al carrito</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="row g-4">
-        <!-- Fila 2 de Tortas -->
-        <!-- Torta 4 -->
-        <div class="col-md-4">
-            <div class="product-card">
-                <img src="Imagenes\CHOCO.jpg" class="product-image" alt="TORTA DE CHOCOLATE">
-                <div class="product-info">
-                    <h5 class="product-title">TORTA DE CHOCOLATE</h5>
-                    <p class="product-price">$25.000,00</p>
-                    <button type="button" class="btn-add-to-cart">Agregar al carrito</button>
+        <div class="row g-4">
+            <!-- Fila 2 de Productos -->
+            <!-- Productos 4 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="Imagenes\ALFACHOCO.jpg" class="product-image" alt="ALFAJOR DE CHOCOLATE">
+                    <div class="product-info">
+                        <h5 class="product-title">ALFAJOR DE CHOCOLATE</h5>
+                        <p class="product-price">$2.000,00</p>
+                        <button type="button" class="btn-add-to-cart">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Productos 5 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="Imagenes\ALFAFRUTOS.jpg" class="product-image" alt="ALFAJOR DE FRUTOS">
+                    <div class="product-info">
+                        <h5 class="product-title">ALFAJOR DE FRUTOS</h5>
+                        <p class="product-price">$3.500,00</p>
+                        <button type="button" class="btn-add-to-cart">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Productos 6 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="Imagenes\Brownie.jpg" class="product-image" alt="BROWNIE">
+                    <div class="product-info">
+                        <h5 class="product-title">BROWNIE</h5>
+                        <p class="product-price">$2.500,00</p>
+                        <button type="button" class="btn-add-to-cart">Agregar al carrito</button>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Torta 5 -->
-        <div class="col-md-4">
-            <div class="product-card">
-                <img src="Imagenes\CHEESECAKE.jpg" class="product-image" alt="CHEESECAKE DE FRUTOS ROJOS">
-                <div class="product-info">
-                    <h5 class="product-title">CHEESECAKE</h5>
-                    <p class="product-price">$30.000,00</p>
-                    <button type="button" class="btn-add-to-cart">Agregar al carrito</button>
-                </div>
-            </div>
-        </div>
-        <!-- Torta 6 -->
-        <div class="col-md-4">
-            <div class="product-card">
-                <img src="Imagenes\FRUTILLAS.jpg" class="product-image" alt="TARTA DE FRUTILLAS">
-                <div class="product-info">
-                    <h5 class="product-title">TARTA DE FRUTILLAS</h5>
-                    <p class="product-price">$25.500,00</p>
-                    <button type="button" class="btn-add-to-cart">Agregar al carrito</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
 
     <!-- Sección Contacto -->
@@ -268,10 +277,14 @@
         <div class="row">
             <div class="col-lg-12">
                 <h2>Contacto</h2>
-                <!-- Implementa un formulario de contacto o añade información de cómo contactarte -->
+                <p class="contact-info">Lunes a Sabados de 8.30 a 19.30 hs </p>
+                <p class="contact-info"><i class="fab fa-whatsapp"></i> +54 911 6983-1910
+                <p class="contact-info"><i class="fa fa-envelope"></i> info@nuncaesmuchodulcedeleche.com</p>
+                <p class="contact-info"><i class="fa fa-map-marker"></i> Av. Congreso 2560 - Belgrano</p>
             </div>
         </div>
     </section>
+
 
     <footer class="bg-light text-center text-lg-start">
         <div class="text-center p-3">
