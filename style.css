@@ -11,14 +11,16 @@ h1, h2 {
 }
 
 .carousel-item {
-    max-height: 600px; 
-    overflow: hidden; 
+    text-align: center; 
 }
 
 .carousel-item img {
-    width: 100%; 
-    object-fit: contain;
+    margin: auto; 
+    display: inline-block; 
+    max-height: 700px; 
+    object-fit: cover;
 }
+
 
 #about .img-fluid {
     max-width: 100%; 
