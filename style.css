@@ -35,6 +35,7 @@ h1, h2 {
 }
 
 .product-card {
+    max-width: 100%;
     background-color: white;
     border: none;
     border-radius: 15px;
