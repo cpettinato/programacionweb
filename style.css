@@ -4,7 +4,7 @@ h1, h2, h3, h4, h5, h6, p, .navbar-brand, .nav-link, footer {
 
 h1, h2 {
     font-weight: 700; 
-    font-size: 2.5rem; 
+    font-size: 30px; 
     color: #5E2129; 
     margin-top: 20px; 
     margin-bottom: 20px; 
@@ -17,7 +17,7 @@ h1, h2 {
 .carousel-item img {
     max-width: 100%;
     height: auto;
-    margin: auto; 
+    /*margin: auto;*/
     display: inline-block; 
     max-height: 700px; 
     object-fit: cover;
