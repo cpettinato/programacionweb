@@ -109,18 +109,5 @@ body {
     margin-right: 10px; 
 }
 
-@media (max-width: 768px) {
-    .product-card, .carousel-item, .product-info, .contact-info {
-        margin: 10px auto;
-        padding: 0 5px;
-    }
-
-    .btn-add-to-cart {
-        width: 100%;
-        box-sizing: border-box;
-    }
-}
-
-
 
 
