@@ -92,6 +92,7 @@ h1, h2 {
 
 body {
     background-color: #F3E6E9;
+    max-width: 100%;
 }
 
 #contact {
