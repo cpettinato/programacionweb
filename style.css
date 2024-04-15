@@ -18,8 +18,7 @@ h1, h2 {
     max-width: 100%;
     height: auto;
     margin: auto; 
-    display: inline-block; 
-    max-height: 700px; 
+    display: inline-block;
     object-fit: cover;
 }
 
