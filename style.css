@@ -106,8 +106,33 @@ body {
 }
 
 @media (max-width: 768px) {
+     .navbar-brand {
+        font-size: 1.5rem;
+    }
+    .nav-link {
+        padding: 0.5rem 1rem; 
+    }
+
+    h1, h2 {
+        font-size: 1.75rem; 
+    }
+
+    .carousel-item img {
+        max-height: 300px; 
+    }
+
+    
     .product-card {
-        margin: 10px 0;
+        margin: 10px 5px; 
+        padding: 10px; 
+    }
+
+    .product-image {
+        max-height: 200px; 
+    }
+
+    #contact {
+        padding: 20px 10px; 
     }
 }
 
