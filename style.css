@@ -3,7 +3,7 @@ h1, h2, h3, h4, h5, h6, p, .navbar-brand, .nav-link, footer {
 }
 
 h1, h2 {
-    font-weight: 700; /* Los valores van de 100 (más delgado) a 900 (más grueso) */
+    font-weight: 700; 
     font-size: 2.5rem; 
     color: #5E2129; 
     margin-top: 20px; 
@@ -104,38 +104,6 @@ body {
 .contact-info i {
     margin-right: 10px; 
 }
-
-@media (max-width: 768px) {
-     .navbar-brand {
-        font-size: 1.5rem;
-    }
-    .nav-link {
-        padding: 0.5rem 1rem; 
-    }
-
-    h1, h2 {
-        font-size: 1.75rem; 
-    }
-
-    .carousel-item img {
-        max-height: 300px; 
-    }
-
-    
-    .product-card {
-        margin: 10px 5px; 
-        padding: 10px; 
-    }
-
-    .product-image {
-        max-height: 200px; 
-    }
-
-    #contact {
-        padding: 20px 10px; 
-    }
-}
-
 
 
 
