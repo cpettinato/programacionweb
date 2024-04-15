@@ -15,6 +15,8 @@ h1, h2 {
 }
 
 .carousel-item img {
+    max-width: 100%;
+    height: auto;
     margin: auto; 
     display: inline-block; 
     max-height: 700px; 
