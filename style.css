@@ -104,5 +104,12 @@ body {
     margin: 10px; 
 }
 
+@media (max-width: 767px) {
+    .col-lg-12, .col-lg-6 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
 
 
