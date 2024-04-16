@@ -19,7 +19,6 @@ h1, h2 {
     height: auto;
     margin: auto;
     display: inline-block; 
-    max-height: 700px; 
     object-fit: cover;
 }
 
