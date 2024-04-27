@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -42,11 +43,10 @@
                         </li>
                     </ul>
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#cart">
-                                <i class="fa fa-shopping-cart"></i> Carrito
-                            </a>
-                        </li>
+                        <a class="nav-link" href="cart.html">
+                            <i class="fa fa-shopping-cart"></i>
+                            Carrito <span id="cart-count" class="badge rounded-pill bg-danger">0</span>
+                        </a>                        
                     </ul>
                 </div>
             </div>
@@ -120,34 +120,36 @@
             <!-- Fila 1 de Tortas -->
             <!-- Torta 1 -->
             <div class="col-md-4">
-                <div class="product-card">
+                <div class="product-card" data-id="1" data-product="KEY LIME PIE" data-price="25500">
                     <img src="Imagenes\LIME.jpg" class="product-image" alt="Key Lime Pie">
                     <div class="product-info">
                         <h5 class="product-title">KEY LIME PIE</h5>
                         <p class="product-price">$25.500,00</p>
-                        <button type="button" class="btn-add-to-cart">Agregar al carrito</button>
+                        <button type="button" class="btn-add-to-cart" onclick="agregarAlCarrito(this)">Agregar al carrito</button>
                     </div>
                 </div>
             </div>
+            
+            
             <!-- Torta 2 -->
             <div class="col-md-4">
-                <div class="product-card">
-                    <img src="Imagenes\MARQUISE.jpg" class="product-image" alt="MARQUISE">
+                <div class="product-card" data-id="2" data-product="MARQUISE" data-price="30000">
+                    <img src="Imagenes\MARQUISE.jpg" class="product-image" alt="Marquise">
                     <div class="product-info">
                         <h5 class="product-title">MARQUISE</h5>
                         <p class="product-price">$30.000,00</p>
-                        <button type="button" class="btn-add-to-cart">Agregar al carrito</button>
+                        <button type="button" class="btn-add-to-cart" onclick="agregarAlCarrito(this)">Agregar al carrito</button>
                     </div>
-                </div>
+                </div>                
             </div>
             <!-- Torta 3 -->
             <div class="col-md-4">
-                <div class="product-card">
+                <div class="product-card" data-id="3" data-product="LEMON PIE" data-price="30500">
                     <img src="Imagenes\LEMON.jpg" class="product-image" alt="LEMON PIE">
                     <div class="product-info">
                         <h5 class="product-title">LEMON PIE</h5>
                         <p class="product-price">$30.500,00</p>
-                        <button type="button" class="btn-add-to-cart">Agregar al carrito</button>
+                        <button type="button" class="btn-add-to-cart" onclick="agregarAlCarrito(this)">Agregar al carrito</button>
                     </div>
                 </div>
             </div>
@@ -157,34 +159,34 @@
             <!-- Fila 2 de Tortas -->
             <!-- Torta 4 -->
             <div class="col-md-4">
-                <div class="product-card">
+                <div class="product-card" data-id="4" data-product="TORTA DE CHOCOLATE" data-price="25000">
                     <img src="Imagenes\CHOCO.jpg" class="product-image" alt="TORTA DE CHOCOLATE">
                     <div class="product-info">
                         <h5 class="product-title">TORTA DE CHOCOLATE</h5>
                         <p class="product-price">$25.000,00</p>
-                        <button type="button" class="btn-add-to-cart">Agregar al carrito</button>
+                        <button type="button" class="btn-add-to-cart" onclick="agregarAlCarrito(this)">Agregar al carrito</button>
                     </div>
                 </div>
             </div>
             <!-- Torta 5 -->
             <div class="col-md-4">
-                <div class="product-card">
+                <div class="product-card" data-id="5" data-product="CHEESECAKE" data-price="30000">
                     <img src="Imagenes\CHEESECAKE.jpg" class="product-image" alt="CHEESECAKE DE FRUTOS ROJOS">
                     <div class="product-info">
                         <h5 class="product-title">CHEESECAKE</h5>
                         <p class="product-price">$30.000,00</p>
-                        <button type="button" class="btn-add-to-cart">Agregar al carrito</button>
+                        <button type="button" class="btn-add-to-cart" onclick="agregarAlCarrito(this)">Agregar al carrito</button>
                     </div>
                 </div>
             </div>
             <!-- Torta 6 -->
             <div class="col-md-4">
-                <div class="product-card">
+                <div class="product-card" data-id="6" data-product="TARTA DE FRUTILLAS" data-price="25500">
                     <img src="Imagenes\FRUTILLAS.jpg" class="product-image" alt="TARTA DE FRUTILLAS">
                     <div class="product-info">
                         <h5 class="product-title">TARTA DE FRUTILLAS</h5>
                         <p class="product-price">$25.500,00</p>
-                        <button type="button" class="btn-add-to-cart">Agregar al carrito</button>
+                        <button type="button" class="btn-add-to-cart" onclick="agregarAlCarrito(this)">Agregar al carrito</button>
                     </div>
                 </div>
             </div>
@@ -198,34 +200,34 @@
             <!-- Fila 1 de Productos -->
             <!-- Producto 1 -->
             <div class="col-md-4">
-                <div class="product-card">
+                <div class="product-card" data-id="7" data-product="ALFAJOR BLANCO" data-price="2500">
                     <img src="Imagenes\ALFAJORBLANCO.jpg" class="product-image" alt="ALFAJOR DE CHOCOLATE BLANCO">
                     <div class="product-info">
                         <h5 class="product-title">ALFAJOR BLANCO</h5>
                         <p class="product-price">$2.500,00</p>
-                        <button type="button" class="btn-add-to-cart">Agregar al carrito</button>
+                        <button type="button" class="btn-add-to-cart" onclick="agregarAlCarrito(this)">Agregar al carrito</button>
                     </div>
                 </div>
             </div>
             <!-- Producto 2 -->
             <div class="col-md-4">
-                <div class="product-card">
+                <div class="product-card" data-id="8" data-product="COOKIE CON CHIPS" data-price="3000">
                     <img src="Imagenes\COOKIECHIPS.jpg" class="product-image" alt="COOKIE CHIPS">
                     <div class="product-info">
                         <h5 class="product-title">COOKIE CON CHIPS</h5>
                         <p class="product-price">$3.000,00</p>
-                        <button type="button" class="btn-add-to-cart">Agregar al carrito</button>
+                        <button type="button" class="btn-add-to-cart" onclick="agregarAlCarrito(this)">Agregar al carrito</button>
                     </div>
                 </div>
             </div>
             <!-- Producto 3  -->
             <div class="col-md-4">
-                <div class="product-card">
+                <div class="product-card" data-id="9" data-product="COOKIE RED VELVET" data-price="3500">
                     <img src="Imagenes\COOKIERED.jpg" class="product-image" alt="COOKIE RED VELVET">
                     <div class="product-info">
                         <h5 class="product-title">COOKIE RED VELVET</h5>
                         <p class="product-price">$3.500,00</p>
-                        <button type="button" class="btn-add-to-cart">Agregar al carrito</button>
+                        <button type="button" class="btn-add-to-cart" onclick="agregarAlCarrito(this)">Agregar al carrito</button>
                     </div>
                 </div>
             </div>
@@ -235,40 +237,39 @@
             <!-- Fila 2 de Productos -->
             <!-- Productos 4 -->
             <div class="col-md-4">
-                <div class="product-card">
+                <div class="product-card" data-id="10" data-product="ALFAJOR DE CHOCOLATE" data-price="2000">
                     <img src="Imagenes\ALFACHOCO.jpg" class="product-image" alt="ALFAJOR DE CHOCOLATE">
                     <div class="product-info">
                         <h5 class="product-title">ALFAJOR DE CHOCOLATE</h5>
                         <p class="product-price">$2.000,00</p>
-                        <button type="button" class="btn-add-to-cart">Agregar al carrito</button>
+                        <button type="button" class="btn-add-to-cart" onclick="agregarAlCarrito(this)">Agregar al carrito</button>
                     </div>
                 </div>
             </div>
             <!-- Productos 5 -->
             <div class="col-md-4">
-                <div class="product-card">
+                <div class="product-card" data-id="11" data-product="ALFAJOR DE FRUTOS" data-price="3500">
                     <img src="Imagenes\ALFAFRUTOS.jpg" class="product-image" alt="ALFAJOR DE FRUTOS">
                     <div class="product-info">
                         <h5 class="product-title">ALFAJOR DE FRUTOS</h5>
                         <p class="product-price">$3.500,00</p>
-                        <button type="button" class="btn-add-to-cart">Agregar al carrito</button>
+                        <button type="button" class="btn-add-to-cart" onclick="agregarAlCarrito(this)">Agregar al carrito</button>
                     </div>
                 </div>
             </div>
             <!-- Productos 6 -->
             <div class="col-md-4">
-                <div class="product-card">
+                <div class="product-card" data-id="12" data-product="BROWNIE" data-price="2500">
                     <img src="Imagenes\Brownie.jpg" class="product-image" alt="BROWNIE">
                     <div class="product-info">
                         <h5 class="product-title">BROWNIE</h5>
                         <p class="product-price">$2.500,00</p>
-                        <button type="button" class="btn-add-to-cart">Agregar al carrito</button>
+                        <button type="button" class="btn-add-to-cart" onclick="agregarAlCarrito(this)">Agregar al carrito</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
 
     <!-- Sección Contacto -->
     <section id="contact" class="container mt-4 mb-4">
@@ -282,7 +283,6 @@
             </div>
         </div>
     </section>
-
 
     <footer class="bg-light text-center text-lg-start">
         <div class="text-center p-3">
