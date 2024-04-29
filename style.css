@@ -16,7 +16,7 @@ h1, h2 {
 
 .carousel-item img {
     max-width: 100%;
-    height: auto;
+    height: 700px;
     margin: auto;
     display: inline-block; 
     object-fit: cover;
@@ -103,8 +103,4 @@ body {
     color: #5E2129; 
     margin: 10px; 
 }
-
-
-
-
 
