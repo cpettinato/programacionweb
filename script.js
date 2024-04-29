@@ -1,6 +1,5 @@
 let carrito = JSON.parse(localStorage.getItem('carrito')) || {};
 
-
 function agregarAlCarrito(button) {
     const card = button.closest('.product-card');
     const id = card.getAttribute('data-id');
@@ -14,6 +13,16 @@ function agregarAlCarrito(button) {
     actualizarCarrito();
 }
 
+function cambiarCantidad(id, delta) {
+    const producto = carrito[id];
+    if (producto) {
+        producto.cantidad += delta;
+        if (producto.cantidad <= 0) {
+            delete carrito[id];
+        }
+        actualizarCarrito(); 
+    }
+}
 
 function actualizarCarrito() {
     localStorage.setItem('carrito', JSON.stringify(carrito));
@@ -52,6 +61,11 @@ function renderizarCarrito() {
 function vaciarCarrito() {
     carrito = {};
     actualizarCarrito();
+}
+
+function actualizarContadorCarrito() {
+    const count = Object.values(carrito).reduce((acc, { cantidad }) => acc + cantidad, 0);
+    document.getElementById('cart-count').textContent = count;
 }
 
 
