@@ -10,6 +10,13 @@ h1, h2 {
     margin-bottom: 20px; 
 }
 
+.navbar-brand img {
+    border-radius: 50%;  /* Hace el logo circular */
+    width: 40px;         /* Establece el ancho del logo */
+    height: 40px;        /* Establece la altura del logo */
+    object-fit: cover;   /* Asegura que la imagen cubra completamente el espacio sin deformarse */
+}
+
 .carousel-item {
     text-align: center; 
 }
@@ -108,23 +115,22 @@ body {
 }
 
 #productModal .modal-dialog {
-    max-width: 400px; /* Ajusta este valor según tus necesidades */
+    max-width: 400px;
 }
 
 #productModal .modal-content {
-    height: auto; /* Asegura que el contenido se ajuste al tamaño necesario, pero que el diálogo del modal tenga un tamaño constante */
+    height: auto; 
 }
 
 #modal-product-image {
-    height: 300px; /* Establece una altura fija para la imagen */
+    height: 300px; 
     width: auto;
-    object-fit: cover; /* Esto asegura que la imagen cubra el área asignada sin distorsionarse */
+    object-fit: cover;
 }
 
 
-
 .modal-body {
-    text-align: center; 
+    text-align: center
 }
 
 .modal-body img {
@@ -179,8 +185,16 @@ body {
     color: #495057; 
     font-size: 1rem;
     font-family: 'Reem Kufi Fun', sans-serif;
+    margin: 0 10px;
 }
 
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    /*justify-content: space-between;*/
+    margin-top: 20px; 
+    margin-bottom: 15px; 
+}
 
 
 
