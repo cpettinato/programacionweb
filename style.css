@@ -26,6 +26,9 @@ h1, h2 {
 #about .img-fluid {
     max-width: 100%; 
     height: auto; 
+    border: none;
+    border-radius: 15px;
+
 }
 
 #about p {
@@ -104,33 +107,52 @@ body {
     margin: 10px; 
 }
 
-.modal-dialog {
-    max-width: 400px; /* Ajusta este valor según lo pequeño que quieras el modal */
+#productModal .modal-dialog {
+    max-width: 400px; /* Ajusta este valor según tus necesidades */
 }
+
+#productModal .modal-content {
+    height: auto; /* Asegura que el contenido se ajuste al tamaño necesario, pero que el diálogo del modal tenga un tamaño constante */
+}
+
+#modal-product-image {
+    height: 300px; /* Establece una altura fija para la imagen */
+    width: auto;
+    object-fit: cover; /* Esto asegura que la imagen cubra el área asignada sin distorsionarse */
+}
+
+
+
 .modal-body {
-    text-align: center; /* Centra el texto y los elementos internos */
+    text-align: center; 
 }
 
 .modal-body img {
     display: block;
-    margin: 0 auto; /* Centra la imagen horizontalmente */
+    margin: 0 auto; 
 }
 
 .quantity-controls, .modal-footer {
     display: flex;
-    justify-content: center; /* Centra los botones y el control de cantidad */
-    padding: 10px; /* Agrega un poco de espacio */
+    justify-content: center; 
+    padding: 10px; 
 }
 
 
 .modal-content {
-    background-color: #fff; /* Color de fondo */
-    color: #333; /* Color de texto */
-    font-family: 'Reem Kufi Fun', sans-serif; /* Fuente, asegúrate de que es la misma que la página */
+    background-color: #fff; 
+    color: #333; 
+    font-family: 'Reem Kufi Fun', sans-serif; 
+}
+
+.modal-title{
+    font-family: 'Reem Kufi Fun', sans-serif;
+    font-size: 30px; 
+    color: #5E2129;
 }
 
 .modal-header, .modal-footer {
-    border-color: #dee2e6; /* Color del borde similar al de la página */
+    border-color: #dee2e6;
 }
 
 .btn-secondary{
@@ -152,9 +174,9 @@ body {
 }
 
 .quantity-controls button {
-    background-color: #f8f9fa; /* Color de fondo para botones de cantidad */
+    background-color: #f8f9fa; 
     border-color: #ced4da;
-    color: #495057; /* Color de texto para botones de cantidad */
+    color: #495057; 
     font-size: 1rem;
     font-family: 'Reem Kufi Fun', sans-serif;
 }
