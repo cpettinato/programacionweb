@@ -104,6 +104,60 @@ body {
     margin: 10px; 
 }
 
+.modal-dialog {
+    max-width: 400px; /* Ajusta este valor según lo pequeño que quieras el modal */
+}
+.modal-body {
+    text-align: center; /* Centra el texto y los elementos internos */
+}
+
+.modal-body img {
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+.quantity-controls, .modal-footer {
+    display: flex;
+    justify-content: center; /* Centra los botones y el control de cantidad */
+    padding: 10px; /* Agrega un poco de espacio */
+}
+
+
+.modal-content {
+    background-color: #fff; /* Color de fondo */
+    color: #333; /* Color de texto */
+    font-family: 'Reem Kufi Fun', sans-serif; /* Fuente, asegúrate de que es la misma que la página */
+}
+
+.modal-header, .modal-footer {
+    border-color: #dee2e6; /* Color del borde similar al de la página */
+}
+
+.btn-secondary{
+    font-size: 1rem;
+    font-family: 'Reem Kufi Fun', sans-serif;
+    color: #5E2129;
+    background-color: white;
+    border: #5E2129;
+    border-radius: 5px;
+}
+
+.btn-primary{
+    font-size: 1rem;
+    font-family: 'Reem Kufi Fun', sans-serif;
+    color: white;
+    background-color: #5E2129;
+    border: none;
+    border-radius: 5px;
+}
+
+.quantity-controls button {
+    background-color: #f8f9fa; /* Color de fondo para botones de cantidad */
+    border-color: #ced4da;
+    color: #495057; /* Color de texto para botones de cantidad */
+    font-size: 1rem;
+    font-family: 'Reem Kufi Fun', sans-serif;
+}
 
 
 
