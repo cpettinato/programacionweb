@@ -34,7 +34,7 @@
                             <a class="nav-link active" aria-current="page" href="#portada">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">Acerca de</a>
+                            <a class="nav-link" href="#about">Acerca de</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#cakes">Tortas</a>
@@ -100,7 +100,107 @@
         </div>
     </section>
 
+    <section id="about" class="container mt-4">
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                <img src="Imagenes\acerca2.jpg" alt="Sobre Nosotros" class="img-fluid">
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <h2>Acerca de</h2>
+                <p>En "Nunca es mucho dulce de leche" celebramos la riqueza del dulce de leche como la estrella de
+                    nuestras exquisitas creaciones. Con más de una década de experiencia, nuestras tortas son una
+                    invitación a deleitarse con el sabor auténtico y la más alta calidad.</p>
+                <p>Visita nuestra tienda o haz tu pedido en línea y disfruta de la promesa de un dulce placer en cada
+                    bocado.</p>
+            </div>
+        </div>
+    </section>
 
+    <!--Seccoion Tortas-->
+    <section id="cakes" class="container mt-5">
+        <div class="row g-4">
+            <h2 class="col-12">Nuestras Tortas</h2>
+            <!-- Fila 1 de Tortas -->
+            <!-- Torta 1 -->
+            <div class="col-md-4">
+                <div class="product-card" data-id="1" data-product="KEY LIME PIE" data-price="25500">
+                    <img src="Imagenes\LIME.jpg" class="product-image" alt="Key Lime Pie">
+                    <div class="product-info">
+                        <h5 class="product-title">KEY LIME PIE</h5>
+                        <p class="product-price">$15.500,00</p>
+                        <button type="button" class="btn-add-to-cart" onclick="agregarAlCarrito(this)">Agregar al
+                            carrito</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Torta 2 -->
+            <div class="col-md-4">
+                <div class="product-card" data-id="2" data-product="MARQUISE" data-price="30000">
+                    <img src="Imagenes\MARQUISE.jpg" class="product-image" alt="Marquise">
+                    <div class="product-info">
+                        <h5 class="product-title">MARQUISE</h5>
+                        <p class="product-price">$20.000,00</p>
+                        <button type="button" class="btn-add-to-cart" onclick="agregarAlCarrito(this)">Agregar al
+                            carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Torta 3 -->
+            <div class="col-md-4">
+                <div class="product-card" data-id="3" data-product="LEMON PIE" data-price="30500">
+                    <img src="Imagenes\LEMON.jpg" class="product-image" alt="LEMON PIE">
+                    <div class="product-info">
+                        <h5 class="product-title">LEMON PIE</h5>
+                        <p class="product-price">$10.500,00</p>
+                        <button type="button" class="btn-add-to-cart" onclick="agregarAlCarrito(this)">Agregar al
+                            carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <!-- Fila 2 de Tortas -->
+            <!-- Torta 4 -->
+            <div class="col-md-4">
+                <div class="product-card" data-id="4" data-product="TORTA DE CHOCOLATE" data-price="25000">
+                    <img src="Imagenes\CHOCO.jpg" class="product-image" alt="TORTA DE CHOCOLATE">
+                    <div class="product-info">
+                        <h5 class="product-title">TORTA DE CHOCOLATE</h5>
+                        <p class="product-price">$15.000,00</p>
+                        <button type="button" class="btn-add-to-cart" onclick="agregarAlCarrito(this)">Agregar al
+                            carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Torta 5 -->
+            <div class="col-md-4">
+                <div class="product-card" data-id="5" data-product="CHEESECAKE" data-price="30000">
+                    <img src="Imagenes\CHEESECAKE.jpg" class="product-image" alt="CHEESECAKE DE FRUTOS ROJOS">
+                    <div class="product-info">
+                        <h5 class="product-title">CHEESECAKE</h5>
+                        <p class="product-price">$20.000,00</p>
+                        <button type="button" class="btn-add-to-cart" onclick="agregarAlCarrito(this)">Agregar al
+                            carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Torta 6 -->
+            <div class="col-md-4">
+                <div class="product-card" data-id="6" data-product="TARTA DE FRUTILLAS" data-price="25500">
+                    <img src="Imagenes\FRUTILLAS.jpg" class="product-image" alt="TARTA DE FRUTILLAS">
+                    <div class="product-info">
+                        <h5 class="product-title">TARTA DE FRUTILLAS</h5>
+                        <p class="product-price">$15.500,00</p>
+                        <button type="button" class="btn-add-to-cart" onclick="agregarAlCarrito(this)">Agregar al
+                            carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Sección Productos Secos -->
     <section id="products" class="container mt-5">
@@ -219,7 +319,8 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary" onclick="agregarAlCarritoDesdeModal()">Agregar al Carrito</button>
+                    <button type="button" class="btn btn-primary" onclick="agregarAlCarritoDesdeModal()">Agregar al
+                        Carrito</button>
                 </div>
             </div>
         </div>

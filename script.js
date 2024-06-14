@@ -65,7 +65,6 @@ function cambiarCantidad(id, delta) {
 
 function actualizarCarrito() {
     localStorage.setItem('carrito', JSON.stringify(carrito));
-    //alert('Producto agregado al carrito!');
     renderizarCarrito();
 }
 
@@ -112,6 +111,11 @@ function actualizarContadorCarrito() {
 function vaciarCarrito() {
     carrito = {};
     actualizarCarrito();
+}
+
+function finalizarCompra(){
+    vaciarCarrito();
+    window.location.href = 'thankyou.html';
 }
 
 document.addEventListener('DOMContentLoaded', () => {
