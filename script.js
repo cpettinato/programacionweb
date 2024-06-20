@@ -114,8 +114,8 @@ function vaciarCarrito() {
 }
 
 function finalizarCompra(){
-    vaciarCarrito();
     window.location.href = 'thankyou.html';
+    vaciarCarrito();
 }
 
 document.addEventListener('DOMContentLoaded', () => {
